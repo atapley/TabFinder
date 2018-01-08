@@ -23,6 +23,7 @@ def recog():file.wav
         
         if len(details) == 1:
             print('Error: Could not recognize song')
+            return ''
         else:
             artist = details.get('metadata').get('music')[0].get('artists')[0].get('name')
             title = details.get('metadata').get('music')[0].get('title')
@@ -30,3 +31,4 @@ def recog():file.wav
         os.remove(SONG_PATH)
     else:
         print('Error: Recording not found')
+        return ''
