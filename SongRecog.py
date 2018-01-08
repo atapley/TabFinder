@@ -2,8 +2,8 @@ import os, sys, json, wave
 from acrcloud.recognizer import ACRCloudRecognizer, ACRCloudRecognizeType
 from pathlib import Path
 
-def recog():
-    SONG_PATH = '/Users/alex_tapley/Documents/Python_Projects/TabFinder/file.wav'
+def recog():file.wav
+    SONG_PATH = 'xxxxxxxxxxxxxxxx'
 
     if Path(SONG_PATH).is_file():
         SONG_NAME = 'file.wav'
