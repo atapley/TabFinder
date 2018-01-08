@@ -13,6 +13,9 @@ def songsterrFind(songDetails):
     searchBar.send_keys(songDetails)
     searchBar.send_keys(Keys.RETURN)
     keyWords = songDetails.lower().split()
+    for x in keyWords:
+        if x.isalpha() == False:
+            keyWords.remove(x)
 
     time.sleep(1)
 
